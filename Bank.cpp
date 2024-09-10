@@ -18,10 +18,10 @@ class temp{
     public:
 	int search;
 
-    void createAccount(void);   // declaration of create account function
-    void depositAmount(void);   // declaration of depositAmount function
-    void withdrawAmount(void);  // declaration of withdrawAmount function
-    void checkInfo(void);       // declaration of checkInfo function
+    void createAccount(void);   
+    void depositAmount(void);   
+    void withdrawAmount(void); 
+    void checkInfo(void);       
 };
 
 int main(){
@@ -84,7 +84,7 @@ int main(){
     }
     return 0;
 }
-// Defination of create account function
+
 void temp :: createAccount(){
 
     srand(time(0));
@@ -96,7 +96,7 @@ void temp :: createAccount(){
 	cout<<"Enter Your Father name :: ";
 	cin>>Fname;
 
-	cout<<"Enter Your cnic :: ";
+	cout<<"Enter Your cnic (unique id) :: ";
 	cin>>cnic;
 	
 	cout<<"Enter Your phone no. :: ";
@@ -115,7 +115,7 @@ void temp :: createAccount(){
 	file<<accNo<<"\t"<<name<<"\t"<<Fname<<"\t"<<cnic<<"\t"<<P_no<<"\t"<<email<<"\t"<<amount<<endl;
 	file.close();
 }
-// Defination of depositAmount function
+
 void temp :: depositAmount(){
    
 	cout<<"Enter amount to deposit :: ";
@@ -142,7 +142,7 @@ void temp :: depositAmount(){
 	remove("data.txt");
 	rename("data1.txt","data.txt");
 }
-// Defination of withdrawAmount function
+
 void temp :: withdrawAmount(){
     
 	cout<<"Enter amount to withdraw :: ";
@@ -169,7 +169,7 @@ void temp :: withdrawAmount(){
 	remove("data.txt");
 	rename("data1.txt","data.txt");
 }
-// Defination of checkInfo function
+
 void temp :: checkInfo(){
     
 	
